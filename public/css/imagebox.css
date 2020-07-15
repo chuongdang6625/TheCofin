@@ -1,0 +1,49 @@
+.imagebox{
+    border: 3px solid black;
+    cursor: pointer;
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hinh {
+width: 100%;
+height: auto;
+transition: all ease-in-out ;
+}
+
+.khoihinhnho {
+width: 260px;
+height: 225px;
+position: relative;
+display: inline-block;
+overflow: hidden;
+}
+
+.txtinbox {
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.52);
+position: absolute;
+bottom:50px;
+text-align: center;
+color: white;
+padding:10px;
+box-sizing: border-box;
+opacity: 0;
+}
+.khoihinhnho:hover div.txtinbox {
+opacity: 1;
+transform: translateY(50px);
+transition:ease-in-out 0.5s;
+}
+
+.khoihinhnho:hover .hinh {
+transform: scale(1.5);
+transition: all ease-in-out 0.5s;
+
+
+}
